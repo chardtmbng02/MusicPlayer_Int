@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="music">
+                <div class="box">
+
+                        <div class="artist-image">
+                            <img src="./img/thumbnail.png" alt="" class="mdltr">
+                            <img src="./img/record-disk.png" alt="" class="disk" >
+                        </div>
+                        <div class="lyrics-title">
+                            <h2>Babalik Sa'Yo</h2>
+                            <p>Moira Dela Torre</p>
+                        </div>
+                            <audio id="song">
+                                <source src="./songs/moira_dela_torre_babalik_sayo.mp3" type="audio/mp3">
+                            </audio>
+                            <div class="timer">
+                                <p id="current-time">-</p>
+                                <p id="duration">-</p>
+                            </div>
+                            <input type="range" value="0" max="100" id="progress">
+                        <div class="controls">
+                            <div class="backward">
+                                <i class="fa-solid fa-backward-step" ></i>
+                            </div>
+                            <div class="play">
+                                <i class="fa-solid fa-play" id="play-icon"></i>
+                            </div>
+                            <div class="forward">
+                                <i class="fa-solid fa-forward-step" ></i>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="album">
+                        <h2>Explore</h2>
+                        <div class="album-details">
+                            <p class="tab active" data-tab="lyrics">Lyrics</p>
+                            <p class="tab" data-tab="albums">Other Albums</p>
+                            <p class="tab" data-tab="artists">Related Artists</p>
+                        </div>
+                        <div class="tab-content">
+                            <div class="lyrics-details tab-pane active" data-tab="lyrics">
+                                
+                            </div>
+                            <div class="albums-details tab-pane" data-tab="albums">
+                        
+                            </div>
+                            <div class="artists-details tab-pane" data-tab="artists">
+                               
+                            </div>
+                        </div>
+                    </div>
+  
+  
+  
+            </div>
+            
+        </div>
+        
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
